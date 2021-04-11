@@ -4,12 +4,30 @@
   padding: 0;
 }
 
+div.header {
+  width: 100vw;
+}
+div.header div.container div.main_logo_navigation {
+  width: 100%;
+  height: 70px;
+}
+div.header div.container div.main_logo_navigation div.logo {
+  font-size: 32px;
+  color: #08a6e4;
+}
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
 }
 
 .container {
-  width: 1352px;
+  width: 100%;
+  padding: 0 15px;
+}
+@media only screen and (min-width:1352px) {
+  .container {
+    width: 1352px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
