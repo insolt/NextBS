@@ -4,18 +4,24 @@ div.header {
         div.main_logo_navigation {
             width: 100%;
             height: 70px;
-            display: flex;
+            // display: flex;
             div.logo {
                 font-size: 32px;
                 color: $color-logo;
             }
             div.header_navigation {
-                input {}
-                span {}
+                input {
+                    color: red;
+                }
+                span {
+                    color: blue;
+                }
                 nav.header_navigation {
                     ul {
                         a {
-                            li {}
+                            li {
+                                color: green;
+                            }
                         }
                     }
                 }
