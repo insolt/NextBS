@@ -8,5 +8,10 @@ body {
 }
 
 .container {
-    width: 1352px;
+    width: 100%;
+    padding: 0 15px;
+    @media #{$desktop} {
+        width: 1352px;
+        margin: 0 auto;
+    }
 }
