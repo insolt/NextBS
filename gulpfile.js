@@ -9,7 +9,7 @@ const browserSync = require("browser-sync").create();
 
 function compileSass(done) {
     gulp
-        .src(entryPath + "/main.scss")
+        .src(entryPath + "/scss/main.scss")
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
         .pipe(autoprefixer())
@@ -23,7 +23,7 @@ function watcher(done) {
     browserSync.init({
         server: "./" + entryPath
     });
-    gulp.watch(entryPath + "/main.scss", gulp.series(compileSass, reload));
+    gulp.watch(entryPath + "/scss/main.scss", gulp.series(compileSass, reload));
     gulp.watch(entryPath + "/app.js", gulp.series(reload));
     gulp.watch(entryPath + "/*.html", gulp.series(reload));
 
