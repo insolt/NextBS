@@ -12,8 +12,10 @@ div.header div.container div.main_logo_navigation {
   padding: 0 25px;
   height: 70px;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
+
 }
 div.header div.container div.main_logo_navigation div.logo {
   font-size: 2em;
