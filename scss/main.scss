@@ -9,6 +9,7 @@ body {
 
 .container {
     width: 100%;
+    min-width: 260px;
     padding: 0 15px;
     @media #{$desktop} {
         width: 1352px;

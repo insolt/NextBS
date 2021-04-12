@@ -1,26 +1,169 @@
 div.header {
     width: 100vw;
+    box-shadow: 0px 3px 6px #00000029;
     div.container {
         div.main_logo_navigation {
-            width: 100%;
+            padding: 0 25px;
             height: 70px;
-            // display: flex;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
             div.logo {
-                font-size: 32px;
+                font-size: 2em;
+                font-weight: 400;
                 color: $color-logo;
             }
-            div.header_navigation {
+
+            div.navigation {
+                position: relative;
+                width: 40px;
+                height: 40%;
                 input {
-                    color: red;
+                    position: absolute;
+                    right: 25px;
+                    top: 0;
+                    width: 50px;
+                    height: 100%;
+                    opacity: 0;
+                    z-index: 10;
+                    &:checked+span {
+                        transform: rotate(30deg);
+                        transform-origin: 0 100%;
+                        &+span {
+                            opacity: 0;
+                            &+span {
+                                transform: rotate(-30deg);
+                                transform-origin: 0 0;
+                            }
+                        }
+                    }
+                    &:checked~nav.navigation {
+                        top: 50px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    @media #{$desktop} {
+                        display: none;
+                    }
                 }
-                span {
-                    color: blue;
+                span.first {
+                    position: absolute;
+                    right: 25px;
+                    top: 0;
+                    width: 100%;
+                    height: 0;
+                    border: 3px solid $color-logo;
+                    border-radius: 3px;
+                    transform-origin: 0 100%;
+                    transition: transform .5s ease-in-out;
+                    @media #{$desktop} {
+                        display: none;
+                    }
+                    @media #{$desktop} {
+                        display: none;
+                    }
                 }
-                nav.header_navigation {
+                span.second {
+                    position: absolute;
+                    right: 25px;
+                    top: 12px;
+                    width: 100%;
+                    height: 0;
+                    border: 3px solid $color-logo;
+                    border-radius: 3px;
+                    transition: opacity .5s ease-in-out;
+                    @media #{$desktop} {
+                        display: none;
+                    }
+                    @media #{$desktop} {
+                        display: none;
+                    }
+                }
+                span.third {
+                    position: absolute;
+                    right: 25px;
+                    top: 24px;
+                    width: 100%;
+                    height: 0;
+                    border: 3px solid $color-logo;
+                    border-radius: 3px;
+                    transform-origin: 0 0;
+                    transition: transform .5s ease-in-out;
+                    @media #{$desktop} {
+                        display: none;
+                    }
+                    @media #{$desktop} {
+                        display: none;
+                    }
+                }
+                nav.navigation {
+                    position: absolute;
+                    right: -11px;
+                    top: -350px;
+                    width: 100vw;
+                    height: 176px;
+                    box-shadow: 0px 3px 6px #00000029;
+                    transition: top .5s ease-in-out;
+
                     ul {
+                        list-style-type: none;
+                        padding: 20px 0 0 40px;
                         a {
-                            li {
-                                color: green;
+
+                            text-decoration: none;
+                            font-size: .9em;
+                            line-height: 2.5em;
+                            letter-spacing: 3.28px;
+                            color: #A5A5A5;
+                            &.active {
+                                font-weight: 700;
+                                color: #000;
+                            }
+                            &:hover {
+                                font-weight: 700;
+                                color: #000;
+                            }
+                            li {}
+
+                        }
+                    }
+                    @media #{$desktop} {
+                        right: 11px;
+                        top: -21px;
+                        width: 600px;
+                        height: 50px;
+                        box-shadow: none;
+                        ul {
+                            list-style-type: none;
+                            padding: 0;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                margin-top: 30px;
+                                padding: 0 10px 0 10px;
+                                height: 100%;
+                                line-height: 2.5em;
+                                letter-spacing: 3.28px;
+                                color: #A5A5A5;
+                                &.active {
+                                    font-weight: 700;
+                                    color: #000;
+                                    border-bottom: 4px solid $color-logo;
+                                    transform: translateY(4px);
+                                }
+                                &:hover {
+                                    font-weight: 700;
+                                    color: #000;
+                                    border-bottom: 4px solid $color-logo;
+                                    transform: translateY(4px);
+                                }
+                                li:hover {}
                             }
                         }
                     }
