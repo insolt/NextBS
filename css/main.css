@@ -6,15 +6,185 @@
 
 div.header {
   width: 100vw;
+  box-shadow: 0px 3px 6px #00000029;
 }
 div.header div.container div.main_logo_navigation {
-  width: 100%;
+  padding: 0 25px;
   height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 div.header div.container div.main_logo_navigation div.logo {
-  font-size: 32px;
+  font-size: 2em;
+  font-weight: 400;
   color: #08a6e4;
 }
+div.header div.container div.main_logo_navigation div.navigation {
+  position: relative;
+  width: 40px;
+  height: 40%;
+}
+div.header div.container div.main_logo_navigation div.navigation input {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+}
+div.header div.container div.main_logo_navigation div.navigation input:checked + span {
+  transform: rotate(30deg);
+  transform-origin: 0 100%;
+}
+div.header div.container div.main_logo_navigation div.navigation input:checked + span + span {
+  opacity: 0;
+}
+div.header div.container div.main_logo_navigation div.navigation input:checked + span + span + span {
+  transform: rotate(-30deg);
+  transform-origin: 0 0;
+}
+div.header div.container div.main_logo_navigation div.navigation input:checked ~ nav.navigation {
+  top: 50px;
+}
+div.header div.container div.main_logo_navigation div.navigation input:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation input {
+    display: none;
+  }
+}
+div.header div.container div.main_logo_navigation div.navigation span.first {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  width: 100%;
+  height: 0;
+  border: 3px solid #08a6e4;
+  border-radius: 3px;
+  transform-origin: 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation span.first {
+    display: none;
+  }
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation span.first {
+    display: none;
+  }
+}
+div.header div.container div.main_logo_navigation div.navigation span.second {
+  position: absolute;
+  right: 25px;
+  top: 12px;
+  width: 100%;
+  height: 0;
+  border: 3px solid #08a6e4;
+  border-radius: 3px;
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation span.second {
+    display: none;
+  }
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation span.second {
+    display: none;
+  }
+}
+div.header div.container div.main_logo_navigation div.navigation span.third {
+  position: absolute;
+  right: 25px;
+  top: 24px;
+  width: 100%;
+  height: 0;
+  border: 3px solid #08a6e4;
+  border-radius: 3px;
+  transform-origin: 0 0;
+  transition: transform 0.5s ease-in-out;
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation span.third {
+    display: none;
+  }
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation span.third {
+    display: none;
+  }
+}
+div.header div.container div.main_logo_navigation div.navigation nav.navigation {
+  position: absolute;
+  right: -11px;
+  top: -350px;
+  width: 100vw;
+  height: 176px;
+  box-shadow: 0px 3px 6px #00000029;
+  transition: top 0.5s ease-in-out;
+}
+div.header div.container div.main_logo_navigation div.navigation nav.navigation ul {
+  list-style-type: none;
+  padding: 20px 0 0 40px;
+}
+div.header div.container div.main_logo_navigation div.navigation nav.navigation ul a {
+  text-decoration: none;
+  font-size: 0.9em;
+  line-height: 2.5em;
+  letter-spacing: 3.28px;
+  color: #A5A5A5;
+}
+div.header div.container div.main_logo_navigation div.navigation nav.navigation ul a.active {
+  font-weight: 700;
+  color: #000;
+}
+div.header div.container div.main_logo_navigation div.navigation nav.navigation ul a:hover {
+  font-weight: 700;
+  color: #000;
+}
+@media only screen and (min-width:1352px) {
+  div.header div.container div.main_logo_navigation div.navigation nav.navigation {
+    right: 11px;
+    top: -21px;
+    width: 600px;
+    height: 50px;
+    box-shadow: none;
+  }
+  div.header div.container div.main_logo_navigation div.navigation nav.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.header div.container div.main_logo_navigation div.navigation nav.navigation ul a {
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
+    height: 100%;
+    line-height: 2.5em;
+    letter-spacing: 3.28px;
+    color: #A5A5A5;
+  }
+  div.header div.container div.main_logo_navigation div.navigation nav.navigation ul a.active {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 4px solid #08a6e4;
+    transform: translateY(4px);
+  }
+  div.header div.container div.main_logo_navigation div.navigation nav.navigation ul a:hover {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 4px solid #08a6e4;
+    transform: translateY(4px);
+  }
+}
+
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
@@ -22,6 +192,7 @@ body {
 
 .container {
   width: 100%;
+  min-width: 260px;
   padding: 0 15px;
 }
 @media only screen and (min-width:1352px) {

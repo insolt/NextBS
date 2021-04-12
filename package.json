@@ -1,5 +1,5 @@
 {
-    "name": "NextBS",
+    "name": "Trial_2021_04_12_1",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -19,5 +19,7 @@
     "dependencies": {
         "gulp-sourcemaps": "^3.0.0"
     },
-    "browsersList": ["defaults"]
+    "browsersList": [
+        "defaults"
+    ]
 }
