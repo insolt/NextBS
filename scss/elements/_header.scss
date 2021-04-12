@@ -1,22 +1,21 @@
-div.header {
+section.header {
     width: 100vw;
     box-shadow: 0px 3px 6px #00000029;
     div.container {
         div.main_logo_navigation {
             padding: 0 25px;
             height: 70px;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             div.logo {
+                font-family: 'Raleway', sans-serif;
                 font-size: 2em;
                 font-weight: 400;
                 color: $color-logo;
             }
-
             div.navigation {
+                font-family: 'Open-Sans', sans-serif;
                 position: relative;
                 width: 40px;
                 height: 40%;
@@ -107,12 +106,11 @@ div.header {
                     height: 176px;
                     box-shadow: 0px 3px 6px #00000029;
                     transition: top .5s ease-in-out;
-
+                    background-color: #fff;
                     ul {
                         list-style-type: none;
                         padding: 20px 0 0 40px;
                         a {
-
                             text-decoration: none;
                             font-size: .9em;
                             line-height: 2.5em;
@@ -126,8 +124,6 @@ div.header {
                                 font-weight: 700;
                                 color: #000;
                             }
-                            li {}
-
                         }
                     }
                     @media #{$desktop} {
@@ -163,7 +159,6 @@ div.header {
                                     border-bottom: 4px solid $color-logo;
                                     transform: translateY(4px);
                                 }
-                                li:hover {}
                             }
                         }
                     }
