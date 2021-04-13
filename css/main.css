@@ -358,7 +358,7 @@ section.benefits {
   background-color: #f7f7f7;
 }
 section.benefits div.container div.articles {
-  padding: 50px;
+  padding: 60px;
 }
 section.benefits div.container div.articles article.benefits_article {
   margin: 40px 0;
@@ -398,15 +398,15 @@ section.benefits div.container div.articles article.benefits_article {
     border-bottom: 4px solid #07ace6;
   }
   section.benefits div.container div.articles article.benefits_article:nth-child(3) {
-    width: 50%;
+    width: 45%;
     position: relative;
   }
   section.benefits div.container div.articles article.benefits_article:nth-child(3):before {
     content: "";
     position: absolute;
-    left: 750px;
+    left: 680px;
     bottom: 0;
-    width: 500px;
+    width: 550px;
     height: 454px;
     background-color: #55dfb4;
     z-index: 5;
@@ -414,7 +414,7 @@ section.benefits div.container div.articles article.benefits_article {
   section.benefits div.container div.articles article.benefits_article:nth-child(3):after {
     content: "";
     position: absolute;
-    left: 840px;
+    left: 770px;
     bottom: 80px;
     width: 320px;
     height: 320px;
