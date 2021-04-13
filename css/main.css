@@ -207,14 +207,18 @@ section.opening div.container div.opening h1.opening_title {
   margin-bottom: 30px;
 }
 section.opening div.container div.opening p.opening_paragraph {
+  max-width: 440px;
+  width: 65%;
   font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 30px;
+  text-align: center;
 }
 section.opening div.container div.opening a.opening_link {
   display: block;
   text-decoration: none;
-  width: 440px;
+  max-width: 440px;
+  width: 70%;
   border-radius: 40px;
   text-align: center;
   font-size: 1em;
@@ -224,7 +228,17 @@ section.opening div.container div.opening a.opening_link {
   box-shadow: 5px 10px 14px #07ACE629;
 }
 @media only screen and (min-width:1352px) {
+  section.opening div.container div.opening a.opening_link {
+    width: 440px;
+  }
+}
+@media only screen and (min-width:1352px) {
   section.opening div.container div.opening {
+    background: none;
+  }
+}
+@media only screen and (min-width:1352px) {
+  section.opening {
     background: url(../assets/background.png) no-repeat center bottom/contain;
   }
 }
@@ -233,6 +247,101 @@ section.statistics {
   width: 100vw;
   box-shadow: 0px -5px 80px #00000029;
 }
+section.statistics div.container div.statistics {
+  height: 762px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+section.statistics div.container div.statistics h2.statistics_title {
+  max-width: 80%;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.1em;
+  font-weight: 400;
+  text-align: center;
+}
+section.statistics div.container div.statistics div.stats div.single_stats {
+  width: 180px;
+  height: 170px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+section.statistics div.container div.statistics div.stats div.single_stats div.stats_icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  position: relative;
+}
+section.statistics div.container div.statistics div.stats div.single_stats p.stats_value {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-align: center;
+}
+section.statistics div.container div.statistics div.stats div.single_stats p.stats_description {
+  width: 60%;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: center;
+}
+section.statistics div.container div.statistics div.stats div.single_stats .person {
+  background-color: #fb3b64;
+}
+section.statistics div.container div.statistics div.stats div.single_stats .person:after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 44px;
+  height: 52px;
+  background-image: url(../assets/person.svg);
+}
+section.statistics div.container div.statistics div.stats div.single_stats .eye {
+  background-color: #07ace6;
+}
+section.statistics div.container div.statistics div.stats div.single_stats .eye:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 66px;
+  height: 37px;
+  background-image: url(../assets/eye.svg);
+}
+section.statistics div.container div.statistics div.stats div.single_stats .folder {
+  background-color: #55dfb4;
+}
+section.statistics div.container div.statistics div.stats div.single_stats .folder:after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 52px;
+  height: 48px;
+  background-image: url(../assets/catalog.svg);
+}
+@media only screen and (min-width:1352px) {
+  section.statistics div.container div.statistics div.stats {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:1352px) {
+  section.statistics div.container div.statistics {
+    height: 331px;
+    padding: 100px 0;
+  }
+}
+
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
@@ -241,7 +350,6 @@ body {
 .container {
   width: 100%;
   min-width: 260px;
-  padding: 0 15px;
 }
 @media only screen and (min-width:1352px) {
   .container {
