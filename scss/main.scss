@@ -3,6 +3,7 @@
 @import "settings/variables.scss";
 @import "elements/header.scss";
 @import "elements/opening.scss";
+@import "elements/benefits.scss";
 body {
     box-sizing: border-box;
     font-family: 'Open-Sans', sans-serif;
@@ -10,7 +11,7 @@ body {
 
 .container {
     width: 100%;
-    min-width: 260px;
+    min-width: 300px;
     @media #{$desktop} {
         width: 1352px;
         margin: 0 auto;

@@ -40,6 +40,14 @@ section.header {
                     }
                     &:checked~nav.navigation {
                         top: 50px;
+                        @media #{$desktop} {
+                            right: 11px;
+                            top: -21px;
+                            width: 600px;
+                            height: 50px;
+                            box-shadow: none;
+                            transition: none;
+                        }
                     }
                     &:hover {
                         cursor: pointer;
@@ -100,7 +108,7 @@ section.header {
                 }
                 nav.navigation {
                     position: absolute;
-                    right: -11px;
+                    right: -25px;
                     top: -350px;
                     width: 100vw;
                     height: 176px;
@@ -132,6 +140,7 @@ section.header {
                         width: 600px;
                         height: 50px;
                         box-shadow: none;
+                        transition: none;
                         ul {
                             list-style-type: none;
                             padding: 0;
