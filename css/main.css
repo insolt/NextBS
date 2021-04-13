@@ -365,6 +365,51 @@ section.benefits div.container div.articles article.benefits_article {
   background-color: #fff;
   border: 1px solid #E8E9ED;
 }
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article {
+    display: flex;
+    padding: 90px 35px;
+  }
+  section.benefits div.container div.articles article.benefits_article:first-child {
+    flex-direction: row-reverse;
+  }
+  section.benefits div.container div.articles article.benefits_article:first-child div.benefits_data {
+    position: relative;
+  }
+  section.benefits div.container div.articles article.benefits_article:first-child div.benefits_data:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 320px;
+    height: 10px;
+    border-bottom: 4px solid #fb3b64;
+  }
+  section.benefits div.container div.articles article.benefits_article:nth-child(2) div.benefits_data {
+    position: relative;
+  }
+  section.benefits div.container div.articles article.benefits_article:nth-child(2) div.benefits_data:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 320px;
+    height: 10px;
+    border-bottom: 4px solid #07ace6;
+  }
+  section.benefits div.container div.articles article.benefits_article:nth-child(3) div.benefits_data {
+    position: relative;
+  }
+  section.benefits div.container div.articles article.benefits_article:nth-child(3) div.benefits_data:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 320px;
+    height: 10px;
+    border-bottom: 4px solid #55dfb4;
+  }
+}
 section.benefits div.container div.articles article.benefits_article div.benefits_img {
   height: 150px;
   width: 100%;
@@ -382,6 +427,14 @@ section.benefits div.container div.articles article.benefits_article div.benefit
   border-radius: 40px;
   z-index: 5;
 }
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_img.laptop:before {
+    top: -50px;
+    left: 500px;
+    height: 180px;
+    width: 180px;
+  }
+}
 section.benefits div.container div.articles article.benefits_article div.benefits_img.laptop:after {
   content: "";
   position: absolute;
@@ -391,6 +444,14 @@ section.benefits div.container div.articles article.benefits_article div.benefit
   height: 102px;
   background: url(../assets/macbook.png) no-repeat center bottom/contain;
   z-index: 10;
+}
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_img.laptop:after {
+    top: -50px;
+    left: 140px;
+    height: 350px;
+    width: 550px;
+  }
 }
 section.benefits div.container div.articles article.benefits_article div.benefits_img.phone:before {
   content: "";
@@ -404,6 +465,14 @@ section.benefits div.container div.articles article.benefits_article div.benefit
   border-radius: 50%;
   z-index: 5;
 }
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_img.phone:before {
+    top: -70px;
+    left: 100px;
+    height: 400px;
+    width: 400px;
+  }
+}
 section.benefits div.container div.articles article.benefits_article div.benefits_img.phone:after {
   content: "";
   position: absolute;
@@ -413,6 +482,14 @@ section.benefits div.container div.articles article.benefits_article div.benefit
   height: 132px;
   background: url(../assets/iphone.png) no-repeat center bottom/contain;
   z-index: 10;
+}
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_img.phone:after {
+    top: -80px;
+    left: 100px;
+    height: 450px;
+    width: 550px;
+  }
 }
 section.benefits div.container div.articles article.benefits_article div.benefits_img.trumpet:before {
   content: "";
@@ -441,12 +518,30 @@ section.benefits div.container div.articles article.benefits_article div.benefit
   color: #000;
   margin: 20px;
 }
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_data h3.benefits_title {
+    font-size: 2.3em;
+    margin-bottom: 30px;
+    margin-right: 100px;
+  }
+}
 section.benefits div.container div.articles article.benefits_article div.benefits_data p.benefits_text {
   font-size: 0.8em;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #000;
   margin: 20px;
+}
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_data p.benefits_text {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width:1352px) {
+  section.benefits div.container div.articles article.benefits_article div.benefits_data {
+    padding: 0 0 50px 0;
+    width: 686px;
+  }
 }
 
 body {

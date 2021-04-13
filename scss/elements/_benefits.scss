@@ -8,6 +8,53 @@ section.benefits {
                 margin: 40px 0;
                 background-color: #fff;
                 border: 1px solid #E8E9ED;
+                @media #{$desktop} {
+                    display: flex;
+                    padding: 90px 35px;
+                    &:first-child {
+                        flex-direction: row-reverse;
+                        div.benefits_data {
+                            position: relative;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                left: 20px;
+                                bottom: 0;
+                                width: 320px;
+                                height: 10px;
+                                border-bottom: 4px solid $color-red;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        div.benefits_data {
+                            position: relative;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                left: 20px;
+                                bottom: 0;
+                                width: 320px;
+                                height: 10px;
+                                border-bottom: 4px solid $color-blue;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        div.benefits_data {
+                            position: relative;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                left: 20px;
+                                bottom: 0;
+                                width: 320px;
+                                height: 10px;
+                                border-bottom: 4px solid $color-green;
+                            }
+                        }
+                    }
+                }
                 div.benefits_img {
                     height: 150px;
                     width: 100%;
@@ -24,6 +71,12 @@ section.benefits {
                             transform: rotate(45deg);
                             border-radius: 40px;
                             z-index: 5;
+                            @media #{$desktop} {
+                                top: -50px;
+                                left: 500px;
+                                height: 180px;
+                                width: 180px;
+                            }
                         }
                         &:after {
                             content: "";
@@ -34,6 +87,12 @@ section.benefits {
                             height: 102px;
                             background: url(../assets/macbook.png) no-repeat center bottom/contain;
                             z-index: 10;
+                            @media #{$desktop} {
+                                top: -50px;
+                                left: 140px;
+                                height: 350px;
+                                width: 550px;
+                            }
                         }
                     }
                     &.phone {
@@ -48,6 +107,12 @@ section.benefits {
                             transform: rotate(45deg);
                             border-radius: 50%;
                             z-index: 5;
+                            @media #{$desktop} {
+                                top: -70px;
+                                left: 100px;
+                                height: 400px;
+                                width: 400px;
+                            }
                         }
                         &:after {
                             content: "";
@@ -58,6 +123,12 @@ section.benefits {
                             height: 132px;
                             background: url(../assets/iphone.png) no-repeat center bottom/contain;
                             z-index: 10;
+                            @media #{$desktop} {
+                                top: -80px;
+                                left: 100px;
+                                height: 450px;
+                                width: 550px;
+                            }
                         }
                     }
                     &.trumpet {
@@ -90,6 +161,11 @@ section.benefits {
                         font-weight: 400;
                         color: #000;
                         margin: 20px;
+                        @media #{$desktop} {
+                            font-size: 2.3em;
+                            margin-bottom: 30px;
+                            margin-right: 100px;
+                        }
                     }
                     p.benefits_text {
                         font-size: .8em;
@@ -97,6 +173,13 @@ section.benefits {
                         font-weight: 400;
                         color: #000;
                         margin: 20px;
+                        @media #{$desktop} {
+                            font-size: 1em;
+                        }
+                    }
+                    @media #{$desktop} {
+                        padding: 0 0 50px 0;
+                        width: 686px;
                     }
                 }
             }
