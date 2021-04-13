@@ -3,7 +3,7 @@ section.benefits {
     background-color: #f7f7f7;
     div.container {
         div.articles {
-            padding: 50px;
+            padding: 60px;
             article.benefits_article {
                 margin: 40px 0;
                 background-color: #fff;
@@ -41,14 +41,14 @@ section.benefits {
                         }
                     }
                     &:nth-child(3) {
-                        width: 50%;
+                        width: 45%;
                         position: relative;
                         &:before {
                             content: "";
                             position: absolute;
-                            left: 750px;
+                            left: 680px;
                             bottom: 0;
-                            width: 500px;
+                            width: 550px;
                             height: 454px;
                             background-color: $color-green;
                             z-index: 5;
@@ -56,7 +56,7 @@ section.benefits {
                         &:after {
                             content: "";
                             position: absolute;
-                            left: 840px;
+                            left: 770px;
                             bottom: 80px;
                             width: 320px;
                             height: 320px;
