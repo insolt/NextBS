@@ -50,6 +50,16 @@ section.header div.container div.main_logo_navigation div.navigation input:check
 section.header div.container div.main_logo_navigation div.navigation input:checked ~ nav.navigation {
   top: 50px;
 }
+@media only screen and (min-width:1352px) {
+  section.header div.container div.main_logo_navigation div.navigation input:checked ~ nav.navigation {
+    right: 11px;
+    top: -21px;
+    width: 600px;
+    height: 50px;
+    box-shadow: none;
+    transition: none;
+  }
+}
 section.header div.container div.main_logo_navigation div.navigation input:hover {
   cursor: pointer;
 }
@@ -122,7 +132,7 @@ section.header div.container div.main_logo_navigation div.navigation span.third 
 }
 section.header div.container div.main_logo_navigation div.navigation nav.navigation {
   position: absolute;
-  right: -11px;
+  right: -25px;
   top: -350px;
   width: 100vw;
   height: 176px;
@@ -156,6 +166,7 @@ section.header div.container div.main_logo_navigation div.navigation nav.navigat
     width: 600px;
     height: 50px;
     box-shadow: none;
+    transition: none;
   }
   section.header div.container div.main_logo_navigation div.navigation nav.navigation ul {
     list-style-type: none;
@@ -342,6 +353,102 @@ section.statistics div.container div.statistics div.stats div.single_stats .fold
   }
 }
 
+section.benefits {
+  width: 100vw;
+  background-color: #f7f7f7;
+}
+section.benefits div.container div.articles {
+  padding: 0 30px 30px 30px;
+}
+section.benefits div.container div.articles article.benefits_article {
+  margin: 40px 0;
+  background-color: #fff;
+  border: 1px solid #E8E9ED;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img.laptop:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 100px - 95px);
+  width: 90px;
+  height: 90px;
+  background-color: #fb3b64;
+  transform: rotate(45deg);
+  border-radius: 40px;
+  z-index: 5;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img.laptop:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 95px);
+  width: 192px;
+  height: 102px;
+  background: url(../assets/macbook.png) no-repeat center bottom/contain;
+  z-index: 10;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img.phone:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 66px);
+  width: 132px;
+  height: 132px;
+  background-color: #07ace6;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  z-index: 5;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img.phone:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 55px);
+  width: 162px;
+  height: 132px;
+  background: url(../assets/iphone.png) no-repeat center bottom/contain;
+  z-index: 10;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img.trumpet:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 195px;
+  background-color: #55dfb4;
+  z-index: 5;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_img.trumpet:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 90%;
+  height: 195px;
+  background: url(../assets/trumpet.png) no-repeat center bottom/contain;
+  z-index: 10;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_data h3.benefits_title {
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 20px;
+}
+section.benefits div.container div.articles article.benefits_article div.benefits_data p.benefits_text {
+  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 20px;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
@@ -349,7 +456,7 @@ body {
 
 .container {
   width: 100%;
-  min-width: 260px;
+  min-width: 300px;
 }
 @media only screen and (min-width:1352px) {
   .container {
