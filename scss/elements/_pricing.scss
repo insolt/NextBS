@@ -1,0 +1,26 @@
+section.pricing {
+    width: 100vw;
+    background-color: #fff;
+    div.container {
+        div.pricing {
+            margin: 0;
+            padding: 50px 18px;
+            h3.pricing_title {
+                font-family: $font-logo;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+            }
+            div.pricing_packages {
+                div.single_package {
+                    h4.package_title {}
+                    p.package_price {}
+                    p.package_offer {}
+                    div.package_options {
+                        p.option {}
+                    }
+                }
+            }
+        }
+    }
+}
