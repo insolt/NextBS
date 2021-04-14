@@ -12,12 +12,109 @@ section.pricing {
                 text-align: center;
             }
             div.pricing_packages {
+                margin: 20px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
                 div.single_package {
-                    h4.package_title {}
-                    p.package_price {}
-                    p.package_offer {}
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    div.single_package_info {
+                        margin: 30px 0;
+                        padding: 20px 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        h4.package_title {
+                            font-family: $font-logo;
+                            font-weight: 800;
+                            font-size: 1.5em;
+                        }
+                        p.package_price {
+                            font-family: $font-text;
+                            font-weight: 300;
+                            font-size: 4em;
+                            margin-left: 40px;
+                            position: relative;
+                            &:after {
+                                content: "$";
+                                position: absolute;
+                                left: -35px;
+                                top: 0;
+                            }
+                        }
+                        p.package_offer {
+                            font-family: $font-logo;
+                            font-size: .9em;
+                            font-weight: 800;
+                        }
+                    }
                     div.package_options {
-                        p.option {}
+                        p.option {
+                            font-family: $font-text;
+                            position: relative;
+                            line-height: 2em;
+                            &.present {
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    left: -20px;
+                                    top: 10px;
+                                    background: url(../assets/ckechmark-1.svg) no-repeat;
+                                }
+                            }
+                            &.absent {
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    left: -20px;
+                                    top: 10px;
+                                    background: url(../assets/close.svg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &.basic {
+                        width: 80vw;
+                        border: 1px solid $color-red;
+                        border-radius: 18px;
+                        position: relative;
+                        div.single_package_info {
+                            p.package_price {
+                                color: $color-red;
+                            }
+                        }
+                    }
+                    &.professional {
+                        width: 90vw;
+                        border: 1px solid $color-blue;
+                        box-shadow: 5px 10px 27px #07ACE629;
+                        border-radius: 18px;
+                        position: relative;
+                        div.single_package_info {
+                            p.package_price {
+                                color: $color-blue;
+                            }
+                        }
+                    }
+                    &.premium {
+                        width: 80vw;
+                        border: 1px solid $color-green;
+                        border-radius: 18px;
+                        position: relative;
+                        div.single_package_info {
+                            p.package_price {
+                                color: $color-green;
+                            }
+                        }
                     }
                 }
             }

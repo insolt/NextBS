@@ -22,7 +22,7 @@ section.header div.container div.main_logo_navigation div.logo {
   color: #08a6e4;
 }
 section.header div.container div.main_logo_navigation div.navigation {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   position: relative;
   width: 40px;
   height: 40%;
@@ -590,6 +590,102 @@ section.pricing div.container div.pricing h3.pricing_title {
   font-weight: 400;
   text-align: center;
 }
+section.pricing div.container div.pricing div.pricing_packages {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info {
+  margin: 30px 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info h4.package_title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info p.package_price {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4em;
+  margin-left: 40px;
+  position: relative;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info p.package_price:after {
+  content: "$";
+  position: absolute;
+  left: -35px;
+  top: 0;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info p.package_offer {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9em;
+  font-weight: 800;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  line-height: 2em;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option.present:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 10px;
+  background: url(../assets/ckechmark-1.svg) no-repeat;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option.absent:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: 10px;
+  background: url(../assets/close.svg) no-repeat;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.basic {
+  width: 80vw;
+  border: 1px solid #fb3b64;
+  border-radius: 18px;
+  position: relative;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.basic div.single_package_info p.package_price {
+  color: #fb3b64;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.professional {
+  width: 90vw;
+  border: 1px solid #07ace6;
+  box-shadow: 5px 10px 27px #07ACE629;
+  border-radius: 18px;
+  position: relative;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.professional div.single_package_info p.package_price {
+  color: #07ace6;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.premium {
+  width: 80vw;
+  border: 1px solid #55dfb4;
+  border-radius: 18px;
+  position: relative;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.premium div.single_package_info p.package_price {
+  color: #55dfb4;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
