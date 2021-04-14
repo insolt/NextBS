@@ -184,7 +184,7 @@ section.benefits {
                 div.benefits_data {
                     h3.benefits_title {
                         font-size: 2em;
-                        font-family: 'Raleway', sans-serif;
+                        font-family: $font-logo;
                         font-weight: 400;
                         color: #000;
                         margin: 20px;
@@ -196,7 +196,7 @@ section.benefits {
                     }
                     p.benefits_text {
                         font-size: .8em;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: $font-text;
                         font-weight: 400;
                         color: #000;
                         margin: 20px;
