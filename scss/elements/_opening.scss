@@ -10,7 +10,7 @@ section.opening {
             align-items: center;
             background: url(../assets/background.png) no-repeat center bottom/200%;
             h1.opening_title {
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-logo;
                 font-size: 3em;
                 font-weight: 400;
                 margin-bottom: 30px;
@@ -63,7 +63,7 @@ section.statistics {
             padding: 50px 0;
             h2.statistics_title {
                 max-width: 80%;
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-logo;
                 font-size: 2.1em;
                 font-weight: 400;
                 text-align: center;
@@ -84,7 +84,7 @@ section.statistics {
                         position: relative;
                     }
                     p.stats_value {
-                        font-family: 'Raleway', sans-serif;
+                        font-family: $font-logo;
                         font-size: 1.3em;
                         letter-spacing: 3px;
                         font-weight: 800;
@@ -92,7 +92,7 @@ section.statistics {
                     }
                     p.stats_description {
                         width: 60%;
-                        font-family: 'Raleway', sans-serif;
+                        font-family: $font-logo;
                         font-size: .9em;
                         font-weight: 400;
                         text-align: center;

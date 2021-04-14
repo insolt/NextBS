@@ -9,13 +9,13 @@ section.header {
             justify-content: space-between;
             align-items: center;
             div.logo {
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-logo;
                 font-size: 2em;
                 font-weight: 400;
                 color: $color-logo;
             }
             div.navigation {
-                font-family: 'Open-Sans', sans-serif;
+                font-family: $font-text;
                 position: relative;
                 width: 40px;
                 height: 40%;
