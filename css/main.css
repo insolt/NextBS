@@ -204,12 +204,12 @@ section.opening {
 }
 section.opening div.container div.opening {
   width: 100%;
-  height: 712px;
+  height: 512px;
   padding-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../assets/background.png) no-repeat center bottom;
+  background: url(../assets/background.png) no-repeat center bottom/200%;
 }
 section.opening div.container div.opening h1.opening_title {
   font-family: "Raleway", sans-serif;
@@ -245,6 +245,7 @@ section.opening div.container div.opening a.opening_link {
 }
 @media only screen and (min-width:1352px) {
   section.opening div.container div.opening {
+    height: 712px;
     background: none;
   }
 }
@@ -575,6 +576,20 @@ section.benefits div.container div.articles article.benefits_article div.benefit
   }
 }
 
+section.pricing {
+  width: 100vw;
+  background-color: #fff;
+}
+section.pricing div.container div.pricing {
+  margin: 0;
+  padding: 50px 18px;
+}
+section.pricing div.container div.pricing h3.pricing_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+}
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
