@@ -29,7 +29,7 @@ section.header div.container div.main_logo_navigation div.navigation {
 }
 section.header div.container div.main_logo_navigation div.navigation input {
   position: absolute;
-  right: 25px;
+  right: 15px;
   top: 0;
   width: 50px;
   height: 100%;
@@ -602,6 +602,15 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
   justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
+  padding-bottom: 30px;
+  position: relative;
+}
+@media only screen and (min-width:1352px) {
+  section.pricing div.container div.pricing div.pricing_packages div.single_package {
+    margin: 40px 40px;
+    padding-bottom: 60px;
+    flex-direction: column;
+  }
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info {
   margin: 30px 0;
@@ -614,12 +623,12 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info h4.package_title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info p.package_price {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 2.8em;
   margin-left: 40px;
   position: relative;
 }
@@ -631,13 +640,23 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.single_package_info p.package_offer {
   font-family: "Raleway", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 800;
+}
+@media only screen and (min-width:1352px) {
+  section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options {
+    margin-left: 40px;
+  }
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option {
   font-family: "Open Sans", sans-serif;
   position: relative;
   line-height: 2em;
+}
+@media only screen and (min-width:1352px) {
+  section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option {
+    line-height: 2.5em;
+  }
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option.present:after {
   content: "";
@@ -648,6 +667,11 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
   top: 10px;
   background: url(../assets/ckechmark-1.svg) no-repeat;
 }
+@media only screen and (min-width:1352px) {
+  section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option.present:after {
+    top: 15px;
+  }
+}
 section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option.absent:after {
   content: "";
   position: absolute;
@@ -657,6 +681,24 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
   top: 10px;
   background: url(../assets/close.svg) no-repeat;
 }
+@media only screen and (min-width:1352px) {
+  section.pricing div.container div.pricing div.pricing_packages div.single_package div.package_options p.option.absent:after {
+    top: 15px;
+  }
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package a.package_link {
+  position: absolute;
+  bottom: -25px;
+  left: calc(50% - 75px);
+  display: block;
+  padding: 16px 57px;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}
 section.pricing div.container div.pricing div.pricing_packages div.single_package.basic {
   width: 80vw;
   border: 1px solid #fb3b64;
@@ -665,6 +707,10 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package.basic div.single_package_info p.package_price {
   color: #fb3b64;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.basic a.package_link {
+  border: 1px solid #fb3b64;
+  background-color: #fb3b64;
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package.professional {
   width: 90vw;
@@ -676,6 +722,11 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
 section.pricing div.container div.pricing div.pricing_packages div.single_package.professional div.single_package_info p.package_price {
   color: #07ace6;
 }
+section.pricing div.container div.pricing div.pricing_packages div.single_package.professional a.package_link {
+  border: 1px solid #07ace6;
+  background-color: #07ace6;
+  box-shadow: 5px 10px 14px #07ACE629;
+}
 section.pricing div.container div.pricing div.pricing_packages div.single_package.premium {
   width: 80vw;
   border: 1px solid #55dfb4;
@@ -684,6 +735,15 @@ section.pricing div.container div.pricing div.pricing_packages div.single_packag
 }
 section.pricing div.container div.pricing div.pricing_packages div.single_package.premium div.single_package_info p.package_price {
   color: #55dfb4;
+}
+section.pricing div.container div.pricing div.pricing_packages div.single_package.premium a.package_link {
+  border: 1px solid #55dfb4;
+  background-color: #55dfb4;
+}
+@media only screen and (min-width:1352px) {
+  section.pricing div.container div.pricing div.pricing_packages {
+    flex-direction: row;
+  }
 }
 
 body {

@@ -22,6 +22,13 @@ section.pricing {
                     justify-content: space-around;
                     align-items: center;
                     margin-bottom: 50px;
+                    padding-bottom: 30px;
+                    position: relative;
+                    @media #{$desktop} {
+                        margin: 40px 40px;
+                        padding-bottom: 60px;
+                        flex-direction: column;
+                    }
                     div.single_package_info {
                         margin: 30px 0;
                         padding: 20px 0;
@@ -32,12 +39,12 @@ section.pricing {
                         h4.package_title {
                             font-family: $font-logo;
                             font-weight: 800;
-                            font-size: 1.5em;
+                            font-size: 1.2em;
                         }
                         p.package_price {
                             font-family: $font-text;
                             font-weight: 300;
-                            font-size: 4em;
+                            font-size: 2.8em;
                             margin-left: 40px;
                             position: relative;
                             &:after {
@@ -49,15 +56,21 @@ section.pricing {
                         }
                         p.package_offer {
                             font-family: $font-logo;
-                            font-size: .9em;
+                            font-size: .8em;
                             font-weight: 800;
                         }
                     }
                     div.package_options {
+                        @media #{$desktop} {
+                            margin-left: 40px;
+                        }
                         p.option {
                             font-family: $font-text;
                             position: relative;
                             line-height: 2em;
+                            @media #{$desktop} {
+                                line-height: 2.5em;
+                            }
                             &.present {
                                 &:after {
                                     content: "";
@@ -67,6 +80,9 @@ section.pricing {
                                     left: -20px;
                                     top: 10px;
                                     background: url(../assets/ckechmark-1.svg) no-repeat;
+                                    @media #{$desktop} {
+                                        top: 15px;
+                                    }
                                 }
                             }
                             &.absent {
@@ -78,9 +94,25 @@ section.pricing {
                                     left: -20px;
                                     top: 10px;
                                     background: url(../assets/close.svg) no-repeat;
+                                    @media #{$desktop} {
+                                        top: 15px;
+                                    }
                                 }
                             }
                         }
+                    }
+                    a.package_link {
+                        position: absolute;
+                        bottom: -25px;
+                        left: calc(50% - 75px);
+                        display: block;
+                        padding: 16px 57px;
+                        border-radius: 25px;
+                        color: #fff;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: .8em;
+                        font-weight: 600;
                     }
                     &.basic {
                         width: 80vw;
@@ -91,6 +123,10 @@ section.pricing {
                             p.package_price {
                                 color: $color-red;
                             }
+                        }
+                        a.package_link {
+                            border: 1px solid $color-red;
+                            background-color: $color-red;
                         }
                     }
                     &.professional {
@@ -104,6 +140,11 @@ section.pricing {
                                 color: $color-blue;
                             }
                         }
+                        a.package_link {
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                            box-shadow: 5px 10px 14px #07ACE629;
+                        }
                     }
                     &.premium {
                         width: 80vw;
@@ -115,7 +156,14 @@ section.pricing {
                                 color: $color-green;
                             }
                         }
+                        a.package_link {
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        }
                     }
+                }
+                @media #{$desktop} {
+                    flex-direction: row;
                 }
             }
         }
