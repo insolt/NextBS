@@ -902,6 +902,33 @@ section.contact div.container div.contact form#contact_form button#contact_form_
   box-shadow: 5px 10px 14px #07ACE629;
 }
 
+footer.footer {
+  width: 100wv;
+}
+footer.footer div.container div.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 30px 22px 17px;
+  background-color: #f7f7f7;
+  box-shadow: 0px -5px 40px #00000029;
+}
+footer.footer div.container div.footer div.fotter_logo h2.footer_logo {
+  font-size: 1.6em;
+  color: #08a6e4;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+footer.footer div.container div.footer div.fotter_logo p.footer_description {
+  font-size: 0.6em;
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+footer.footer div.container div.footer div.footer_links a img {
+  margin-left: 20px;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Open-Sans", sans-serif;
