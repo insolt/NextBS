@@ -765,7 +765,7 @@ section.contact div.container div.contact div.contact_info {
 }
 @media only screen and (min-width:1352px) {
   section.contact div.container div.contact div.contact_info {
-    width: 450px;
+    width: 448px;
     padding: 30px 0;
   }
 }
@@ -812,7 +812,7 @@ section.contact div.container div.contact form#contact_form {
 }
 @media only screen and (min-width:1352px) {
   section.contact div.container div.contact form#contact_form {
-    width: 450px;
+    width: 448px;
     padding: 30px 0;
   }
 }
@@ -900,6 +900,11 @@ section.contact div.container div.contact form#contact_form button#contact_form_
   font-size: 0.8em;
   font-weight: 600;
   box-shadow: 5px 10px 14px #07ACE629;
+}
+@media only screen and (min-width:1352px) {
+  section.contact div.container div.contact form#contact_form button#contact_form_btn {
+    padding: 20px 97px;
+  }
 }
 
 footer.footer {
