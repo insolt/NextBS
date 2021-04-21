@@ -903,15 +903,15 @@ section.contact div.container div.contact form#contact_form button#contact_form_
 }
 
 footer.footer {
-  width: 100wv;
+  width: 100vw;
+  background-color: #f7f7f7;
+  box-shadow: 0px -5px 40px #00000029;
 }
 footer.footer div.container div.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 30px 22px 17px;
-  background-color: #f7f7f7;
-  box-shadow: 0px -5px 40px #00000029;
 }
 footer.footer div.container div.footer div.fotter_logo h2.footer_logo {
   font-size: 1.6em;
