@@ -6,7 +6,11 @@
 
 section.header {
   width: 100vw;
+  background-color: #fff;
   box-shadow: 0px 3px 6px #00000029;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 section.header div.container div.main_logo_navigation {
   padding: 0 25px;
