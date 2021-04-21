@@ -753,8 +753,21 @@ section.contact div.container div.contact {
   width: 100%;
   padding-bottom: 64px;
 }
+@media only screen and (min-width:1352px) {
+  section.contact div.container div.contact {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
 section.contact div.container div.contact div.contact_info {
   padding: 0 30px;
+}
+@media only screen and (min-width:1352px) {
+  section.contact div.container div.contact div.contact_info {
+    width: 450px;
+    padding: 30px 0;
+  }
 }
 section.contact div.container div.contact div.contact_info h2.contact_title {
   font-family: "Raleway", sans-serif;
@@ -796,6 +809,12 @@ section.contact div.container div.contact div.contact_info div.contact_details p
 }
 section.contact div.container div.contact form#contact_form {
   padding: 30px;
+}
+@media only screen and (min-width:1352px) {
+  section.contact div.container div.contact form#contact_form {
+    width: 450px;
+    padding: 30px 0;
+  }
 }
 section.contact div.container div.contact form#contact_form label {
   text-transform: uppercase;
