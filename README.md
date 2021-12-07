@@ -8,4 +8,4 @@ Working version needs as follow:
 -index.html file,
 -favicon.ico file.
 
-You can also enjoy scrolling website directly from <a href="http://insolt.byethost13.com">HERE...</a>
+You can also enjoy scrolling website directly from <a href="http://pectoral-buffer.000webhostapp.com/">HERE...</a>
